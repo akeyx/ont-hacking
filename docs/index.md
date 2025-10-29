@@ -51,7 +51,7 @@ If you have access to an SFP to ethernet [media converter like eg this one ](htt
 **Note**: The advantage of using the medium converter is that you can configure the SFP ONT stick without the need to have the fibre optic cable plugged into it yet.
 
 ## Access via a (mikrotik) router
-If you only have your target router at hand which will eventually be the one hosting the SFP ONT you can configure yourself a NAT rule to masquarade your LAN ips to one from 192.168.100.0/24 to be able to access the stick. You could also play with bridging ports or with vlans but I'd say NATing is the simplest so something like this should do:
+If you only have your target router at hand which will eventually be the one hosting the SFP ONT you can configure yourself a NAT rule to masquarade your LAN ips to one from `192.168.100.0/24` to be able to access the stick. You could also play with bridging ports or with vlans but I'd say NATing is the simplest so something like this should do:
 
 ```
 /ip firewall nat
@@ -65,11 +65,11 @@ The above rule will allow your LAN hosts access the ONT stick IP address (192.16
 ## Accessing the Leox ONT
 
 The stick's details:
-- IP: 192.168.100.1
-- user: leox
-- password: leolabs_7
+- IP: `192.168.100.1`
+- user: `leox`
+- password: `leolabs_7`
 
-You can browse to it by visting: http://192.168.100.1 or telnet to it. Do try both as both access methods will be needed.
+You can browse to it by visting: [http://192.168.100.1](http://192.168.100.1) or telnet to it. Do try both as both access methods will be needed.
 
 ## Get the original (ISP provided) ONT details
 
@@ -133,7 +133,7 @@ At this point the `omcicli mib get 84` and `omcicli mib get 131` will not show y
 
 ## Login to the web interface
 
-You can also have a browse around in the web interface available under: http://192.168.100.1 . 
+You can also have a browse around in the web interface available under: [http://192.168.100.1](http://192.168.100.1) . 
 
 **NOTE**: Don't change anything yet.
 
@@ -146,7 +146,7 @@ So at this point you may think that if you retype all the settings from the back
 
 ## GPON Settings
 
-1. Login to the web interface under http://192.168.100.1 and click on Admin->"GPON Settings". 
+1. Login to the web interface under [http://192.168.100.1](http://192.168.100.1) and click on Admin->"GPON Settings". 
 2. Make sure you have the "OMCI OLT Mode:" option set to "Customized Mode"
 3. Click on "Apply Changes"
 
@@ -167,7 +167,7 @@ Now you can start configuring your ONT stick
 
 ### Set the MAC address
 
-Use the "MAC ID" value from the original Nokia ONT in place of AABBCCDDEEFF
+Use the "MAC ID" value from the original Nokia ONT in place of `AABBCCDDEEFF`
 
 ```
 flash set ELAN_MAC_ADDR AABBCCDDEEFF 
@@ -178,7 +178,7 @@ Set the OMCI and GPON values:
 
 ### GPON serial number
 
-Use the S/N value from the back of the original Nokia ONT in place of ALCLXXXXXXXX
+Use the S/N value from the back of the original Nokia ONT in place of `ALCLXXXXXXXX`
 ```
 flash set GPON_SN ALCLXXXXXXXX
 ```
@@ -199,7 +199,7 @@ flash set GPON_ONU_MODEL G-010G-R
 
 ### Set OMCI Hardware version
 
-Use the "ONT P/N" value from your original Nokia ONT in place of 3FXXXXXXXXXX
+Use the "ONT P/N" value from your original Nokia ONT in place of `3FXXXXXXXXXX`
 
 ```
 flash set HW_HWVER 3FXXXXXXXXXX
