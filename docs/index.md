@@ -48,7 +48,7 @@ I'm not going to be going extensively through basic network setup like how to se
 
 If you have access to an SFP to ethernet [media converter like eg this one ](https://www.aliexpress.com/item/1005004580254846.html?spm=a2g0o.order_list.order_list_main.9.68b418027pam3h) then you have it easy and you can simply plug the Leox ONT stick into the SFP to ethernet converter, connect it to your workstation and setup your local IP to something from `192.168.100.0/24` subnet. Just not the `192.168.100.1` because that's the stick's default IP.
 
-**Note: The advantage of using the medium converter is that you can configure the SFP ONT stick without the need to have the fibre optic cable plugged into it yet.
+**Note**: The advantage of using the medium converter is that you can configure the SFP ONT stick without the need to have the fibre optic cable plugged into it yet.
 
 ## Access via a (mikrotik) router
 If you only have your target router at hand which will eventually be the one hosting the SFP ONT you can configure yourself a NAT rule to masquarade your LAN ips to one from 192.168.100.0/24 to be able to access the stick. You could also play with bridging ports or with vlans but I'd say NATing is the simplest so something like this should do:
@@ -60,7 +60,7 @@ add action=masquerade chain=srcnat dst-address=192.168.100.1
 
 The above rule will allow your LAN hosts access the ONT stick IP address (192.168.100.1). 
 
-**NOTE: This will ONLY work when the fibre optic cable is plugged into the stick!!! This is due to the (Mikrotik) router only allowing access to the interface once it's up which can only happen if the cable is plugged in.
+**NOTE**: This will ONLY work when the fibre optic cable is plugged into the stick!!! This is due to the (Mikrotik) router only allowing access to the interface once it's up which can only happen if the cable is plugged in.
 
 ## Accessing the Leox ONT
 
@@ -92,7 +92,7 @@ Bear in mind that depending on your ISP and the ONT version/model there maybe mu
 
 In this step you will configure the ONT stick with the values discovered earlier which usually won't be enough to get the full connectivity but we need this to proceed to the next step so follow me!
 
-**NOTE: For best results you should have the fibre optics cable plugged into the SFP ONT module.
+**NOTE**: For best results you should have the fibre optics cable plugged into the SFP ONT module.
 
 ## Check the stick status using telnet
 
@@ -135,7 +135,7 @@ At this point the `omcicli mib get 84` and `omcicli mib get 131` will not show y
 
 You can also have a browse around in the web interface available under: http://192.168.100.1 . 
 
-**NOTE: Don't change anything yet.
+**NOTE**: Don't change anything yet.
 
 
 # The problem
