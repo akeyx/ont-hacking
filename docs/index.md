@@ -6,7 +6,7 @@ has_children: true
 
 # Replacing Nokia ONT with SFP+ Leox LXT-010S-H
 
-This page documents how to replace ISP issued Nokia ONT (eg. G-010G-Q or G-010G-R) with your own. Here I'll use Leox [LXT-010S-H|https://www.leolabs.pl/ont-leox-lxt-010s-h.html].
+This page documents how to replace ISP issued Nokia ONT (eg. G-010G-Q or G-010G-R) with your own. Here I'll use Leox LXT-010S-H|https://www.leolabs.pl/ont-leox-lxt-010s-h.html.
 
 ## Tested ISPs
 
@@ -46,7 +46,7 @@ I'm not going to be going extensively through basic network setup like how to se
 
 ## Networking setup
 
-If you have access to an SFP to ethernet [media converter like eg this one | https://www.aliexpress.com/item/1005004580254846.html?spm=a2g0o.order_list.order_list_main.9.68b418027pam3h] then you have it easy and you can simply plug the Leox ONT stick into the SFP to ethernet converter, connect it to your workstation and setup your local IP to something from 192.168.100.0/24 subnet. Just not the 192.168.100.1 because that's the stick's IP.
+If you have access to an SFP to ethernet [media converter like eg this one ](https://www.aliexpress.com/item/1005004580254846.html?spm=a2g0o.order_list.order_list_main.9.68b418027pam3h) then you have it easy and you can simply plug the Leox ONT stick into the SFP to ethernet converter, connect it to your workstation and setup your local IP to something from 192.168.100.0/24 subnet. Just not the 192.168.100.1 because that's the stick's IP.
 
 **Note: The advantage of using the medium converter is that you can configure the SFP ONT stick without the need to have the fibre optic cable plugged into it yet.
 
