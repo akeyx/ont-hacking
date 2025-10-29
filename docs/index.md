@@ -38,7 +38,7 @@ Because:
 
 # Preface
 
-There's already a fair number of blog posts etc. documenting how to do this sort of thing but pretty much all of them go through the case of ONT being Huawei and require almost zero config or using some basic settings which don't really work with Nokia ONTs/ONUs so here I'm documenting the full process of replacing such ISP issued device with your own focusing on most important bits like obtaining the right firmware version etc.
+There's already a fair number of blog posts etc. documenting how to do this sort of thing but pretty much all of them go through the case of ONT being Huawei and require almost zero config or using some basic settings which don't really work with Nokia ONTs/ONUs so here I'm documenting the full process of replacing such ISP issued device with your own, focusing on most important bits like obtaining the right firmware version etc.
 
 I'm not going to be going extensively through basic network setup like how to setup your network to gain access to the actual ONT web interface because if you're reading this you should know this already.
 
@@ -46,7 +46,7 @@ I'm not going to be going extensively through basic network setup like how to se
 
 ## Networking setup
 
-If you have access to an SFP to ethernet [media converter like eg this one ](https://www.aliexpress.com/item/1005004580254846.html?spm=a2g0o.order_list.order_list_main.9.68b418027pam3h) then you have it easy and you can simply plug the Leox ONT stick into the SFP to ethernet converter, connect it to your workstation and setup your local IP to something from 192.168.100.0/24 subnet. Just not the 192.168.100.1 because that's the stick's IP.
+If you have access to an SFP to ethernet [media converter like eg this one ](https://www.aliexpress.com/item/1005004580254846.html?spm=a2g0o.order_list.order_list_main.9.68b418027pam3h) then you have it easy and you can simply plug the Leox ONT stick into the SFP to ethernet converter, connect it to your workstation and setup your local IP to something from `192.168.100.0/24` subnet. Just not the `192.168.100.1` because that's the stick's default IP.
 
 **Note: The advantage of using the medium converter is that you can configure the SFP ONT stick without the need to have the fibre optic cable plugged into it yet.
 
