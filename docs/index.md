@@ -6,7 +6,7 @@ has_children: true
 
 # Replacing Nokia ONT with SFP+ Leox LXT-010S-H
 
-This page documents how to replace ISP issued Nokia ONT (eg. G-010G-Q or G-010G-R) with your own. Here I'll use Leox LXT-010S-H|https://www.leolabs.pl/ont-leox-lxt-010s-h.html.
+This page documents how to replace ISP issued Nokia ONT (eg. G-010G-Q or G-010G-R) with your own. Here I'll use [Leox LXT-010S-H](https://www.leolabs.pl/ont-leox-lxt-010s-h.html).
 
 ## Tested ISPs
 
